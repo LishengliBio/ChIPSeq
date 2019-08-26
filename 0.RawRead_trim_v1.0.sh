@@ -2,8 +2,8 @@
 sample=$1
 dir_wk='/home/D/cza/ATAC_HCC_tissue/LSL'
 dir_fq=${dir_wk}'/fastq'
-fq1=${dir_fq}'_R1.fastq.gz'
-fq2=${dir_fq}'_R2.fastq.gz'
+fq1=${dir_fq}/${sample}/${sample}'_R1.fastq.gz'
+fq2=${dir_fq}/${sample}/${sample}'_R2.fastq.gz'
 dir_trim=${dir_wk}'/Trim_results'
 mkdir -p ${dir_trim}/${sample}
 filt_r1=${dir_trim}/${sample}/${sample}'_filtered_R1.fastq.gz'
